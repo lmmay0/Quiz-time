@@ -1,6 +1,6 @@
 var quizData = [
     {
-        question: "What percent of websites use Javascript",
+        question: "1/5 What percent of websites use Javascript",
         a: "0",
         b: "83",
         c: "98",
@@ -9,7 +9,7 @@ var quizData = [
         correct: "c",
     },
     {
-        question: "What does DOM stand for",
+        question: "2/5 What does DOM stand for",
         a: "Document Object Model",
         b: "Drive Object Method",
         c: "Document Origin Model",
@@ -18,7 +18,7 @@ var quizData = [
         correct: "a",
     },
     {
-        question: "Are Java and Javascript the same",
+        question: "3/5Are Java and Javascript the same",
         a: "No",
         b: "Yes",
        c: "",
@@ -27,7 +27,7 @@ var quizData = [
         correct: "a",
     },
     {
-        question: "When did  ECMAScript 6 get relased",
+        question: "4/5 When did  ECMAScript 6 get released",
         a: "1996",
         b: "1987",
         c: "2006",
@@ -37,7 +37,7 @@ var quizData = [
     },
 
     {
-        question: "What was Microsofts version of Javascript called",
+        question: "5/5 What was Microsoft's version of Javascript called",
         a: "c#",
         b: "Microscript",
         c: "Jascript",
@@ -49,6 +49,7 @@ var quizData = [
     
 ];
 const submitBtn = document.getElementById('submit')
+const resetBtn = document.getElementById('reset')
 const quiz= document.getElementById('quiz')
 const answerEls = document.querySelectorAll('.answer')
 const a_text = document.getElementById('a_text')
@@ -59,6 +60,7 @@ const e_text = document.getElementById('e_text')
 const questionEl = document.getElementById('question')
 let currentQuiz = 0
 let score = 0
+
 loadQuiz()
 function loadQuiz() {
     unclickAnswers()
